@@ -13,8 +13,8 @@ const router = express.Router();
 router.get('/', controller.getAllMusicas);
 router.get('/artistas', controller.getAllArtistas);
 router.get('/albuns', controller.getAllAlbuns);
-router.get('/albuns/:album', controller.getByAlbum);
 router.get('/:id', controller.getMusicasById);
 router.get('/artistas/:artista', controller.getByArtista);
+router.get('/albuns/:album', controller.getByAlbum);
 
 module.exports = router

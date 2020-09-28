@@ -18,7 +18,7 @@ app.use('/jogos', jogos);
 app.use('/series', series);
 
 app.get('/', (req, res) => {
-    res.status(400).sendFile('./views/index.html', { root: __dirname})
+    res.status(200).sendFile('./views/index.html', { root: __dirname})
 })
 
 app.get('*', (req, res) => {
